@@ -1,10 +1,27 @@
 AOS.init();
 
 //  Work experience cards
-/*
+
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
- 
+  {
+    title: "Bio",
+    cardImage: "assets/images/experience-page/flipkart.jpg",
+    desp: "June Dempsey is a stand up comic from Louisville, Kentucky. They put on a local monthly variety hour “The June Dempsey show”. They’ve been a part of the 2019 and 2021 Midwest Queer Festival and was named “Best of the Fest” in the 2022 Rubber City Comedy Festival. ",
+  },
+  {
+    title: "Headshots",
+    cardImage: "assets/images/experience-page/gsoc.png",
+    place: "Google Documents Folder",
+    desp: "<a href="https://drive.google.com/drive/folders/1YvJNLnFByX_Q2XCmI6BeV2yRg3c5yO-0?usp=sharing"> Click here for Headshots </a>",
+  },
+  {
+    title: "Headshots",
+    cardImage: "assets/images/experience-page/IIT_Bombay.jpg",
+    place: "IIT, Bombay",
+    time: "(Dec, 19 - Jan, 20)",
+    desp: "<a href="https://drive.google.com/drive/folders/1s_QCW_fS3txdW3dluGTaSr_7BBmoQOts?usp=sharing">Click here for a two 5 minute clips, and multiple short shareable one minute clips</a>",
+  },
 ];
 
 const showCards2 = () => {
@@ -37,54 +54,5 @@ const showCards2 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards2);
 
-// Volunteership Cards
 
-const volunteership = document.querySelector(".volunteership");
-const volunteershipcards = [
- 
-];
-
-const showCards = () => {
-  let output = "";
-  volunteershipcards.forEach(
-    ({ title, cardImage, description }) =>
-      (output += `        
-      <div class="card volunteerCard" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100" data-aos-duration="600" style="height: 550px;width:400px">
-      
-      <img src="${cardImage}" height="250" width="65" class="card-img" style="border-radius:10px">
-      <div class="content">
-          <h2 class="volunteerTitle">${title}</h2><br>
-          <p class="copy">${description}</p></div>
-      
-      </div>
-      `)
-  );
-  volunteership.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", showCards);
-
-// Hackathon Section
-
-
-const showCards3 = () => {
-  let output = "";
-  mentor.forEach(
-    ({ title, image, subtitle, desp }) =>
-      (output += `  
-      <div class="blog-slider__item swiper-slide">
-        <div class="blog-slider__img">
-            <img src="${image}" alt="">
-        </div>
-        <div class="blog-slider__content">
-          <div class="blog-slider__title">${title}</div>
-          <span class="blog-slider__code">${subtitle}</span>
-          <div class="blog-slider__text">${desp}</div>
-          <a href="#" class="blog-slider__button">Read More</a>   
-        </div>
-      </div>
-      `)
-  );
-  hackathonsection.innerHTML = output;
-};
 document.addEventListener("DOMContentLoaded", showCards3);
-*/
